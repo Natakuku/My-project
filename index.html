@@ -267,8 +267,31 @@
             <div class="dot"></div>
             <a href="tel:0800 211 927">0800 211 927</a>
             <div class="dot"></div>
-            <span><a class="footer-form" href="#">contact@forstudy.space</a></span>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a class="footer-form"
+            href="#">contact@forstudy.space</a></button>
+    <div id="id01" class="modal">
+    
+        <form class="modal-content animate" action="../action_page.php" method="post">
+    
+            <div class="container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Закрыть Modal">&times;</span>
+                <h2>We would like to help you</h2>
+                <input type="text" placeholder="Name" name="uname" required>
+                <input type="text" placeholder="Message" name="uname" required>
+                <h3>How to answer you?</h3>
+                <input type="tel" placeholder="Phone number" name="tel" required>
+                <input type="email" placeholder="Email" name="email" required>
+    
+                <button class="submit" type="submit">Send message</button>
             </div>
+    
+        </form>
+    </div>
+          
+
+
+    </div>
     </div>
     <div class="footer-right">© 2021 HLEGAL Law company, LLC</div>
     </section>
@@ -299,6 +322,13 @@
                 menuItem.addEventListener("click", toggleMenu);
             }
         )
+
+        var modal = document.getElementById('id01');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }        
 </script>
 </body>
 </html>

@@ -668,7 +668,7 @@ footer {
                     font-weight: 700;
                     font-family: Montserrat-Bold;
                     line-height: 14.63px;
-                }
+                }               
             }
 
             .footer-left__bottom {
@@ -682,6 +682,7 @@ footer {
                     flex-direction: column;
                 }
 
+
                 .footer-bottom__img:hover svg path {
                     fill: #F0145A;
                 }
@@ -694,7 +695,6 @@ footer {
                     text-decoration: none;
                     font-family: Montserrat-Bold;
                 }
-
                 .footer-form {
                     color: #24A3FF;
                     font-size: 16px;
@@ -702,18 +702,154 @@ footer {
                     line-height: 19.5px;
                     font-family: Montserrat-Bold;
                     transition-duration: 4s ease;
-
+            
                     a {
                         text-decoration: none;
                     }
                 }
-
+            
                 .footer-form:hover {
                     color: #F0145A;
                 }
+    
+        button {
+            background-color: #F5F5FA;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            width: 100%;
+        }
+        input[type=text],
+        input[type=tel],
+        input[type=email] {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 30px;
+            display: inline-block;
+            border: 1px solid #FFFFFF;
+            background-color: #FFFFFF;
+            border-radius: 12px;
+            color: #B3B3BA;
+            font-family: Montserrat-Regular;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+    h2 {
+        font-size: 38px;
+        font-weight: 700;
+        font-family: Montserrat-Bold;
+        line-height: 46.32px;
+        background: linear-gradient(45deg, #F0145A, #EF8080);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 30px;
+    }
+    h3 {
+        color: #B3B3BA;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: Montserrat-Regular;
+        line-height: 17.07px;
+        padding: 30px 0 15px 30px;
+    }
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            top: 50%;
+            bottom: 0;
+            width: 50%;
+            height: 50%;
+            overflow: auto;
+            background-color: #F5F5FA;
+            padding-top: 30px;
+            border-radius: 12px;
+            @media screen and (max-width: 760px) {
+                transform: scale(0.8);
+                width: 100%;
+            }
+        
+        .modal-content {
+            background-color: #F5F5FA;
+            width: 90%;
+            position: relative;
+        .close {
+                position: absolute;
+                right: 15px;
+                top: 0;
+                color: red;
+                font-size: 35px;
+                font-weight: bold;
+                border: 1px solid transparent;
+                transition-duration: .4s;
+                padding: 1px 3px;
             }
         }
+    
+        .close:hover,
+        .close:focus {
+            position: absolute;
+            right: 15px;
+            top: 0;
+            color: red;
+            cursor: pointer;
+            border: none;
+            border: 1px solid transparent;
+            background-color: #E6E6F0;
+            padding: 1px 3px;
+            border-radius: 8px;
+        }
+        .submit {
+            background-color: #24A3FF;
+            color: #ffffff;
+            padding: 18px;
+            text-align: center;
+            font-family: Montserrat-Regular;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19.5px;
+            margin: 30px;
+            border-radius: 12px;
+        }
+        .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+        }
 
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+
+
+        }
+    }
         .footer-right {
             color: #B3B3BA;
             font-family: Montserrat-Regular;
@@ -728,4 +864,3 @@ footer {
         }
     }
 }
-
