@@ -1005,7 +1005,8 @@ footer {
             
                         input[type=text],
                         input[type=tel],
-                        input[type=email] {
+                        input[type=email],
+                        input[type=msg] {
                             width: 100%;
                             padding: 15px;
                             margin: 15px 30px;
@@ -1019,7 +1020,9 @@ footer {
                             font-weight: 400;
                             line-height: 26px;
                         }
-            
+                        input[type=msg] {
+                            padding-bottom: 60px;
+                        }
                         .imgcontainer {
                             text-align: center;
                             margin: 24px 0 12px 0;
